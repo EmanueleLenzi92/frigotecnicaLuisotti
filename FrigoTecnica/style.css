@@ -1,0 +1,499 @@
+
+
+
+body{font-family: 'Roboto', sans-serif;}
+html,body {margin:0% !important; padding:0px; border:0px}
+
+
+p {margin-bottom: 2rem !important;}
+
+
+
+
+/*<!--Top Bar-->*/
+#topbar {
+    background: #fff;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+.float-left {
+    float: left!important;
+}
+
+.float-right {
+    float: right!important;
+}
+
+
+#topbar .social-links a:first-child {
+    border-left: 0;
+}
+
+#topbar .social-links a {
+    color: #555;
+    padding: 4px 12px;
+    display: inline-block;
+    line-height: 1px;
+    border-left: 1px solid #e9e9e9;
+}
+
+#topbar .contact-info i {
+    color: #4db8ff;
+    padding: 4px;
+}
+
+#topbar .contact-info a {
+    line-height: 1;
+    color: #555;
+}
+
+#topbar .contact-info .fa-phone {
+    padding-left: 20px;
+    margin-left: 20px;
+    border-left: 1px solid #e9e9e9;
+}
+
+/*Menu*/
+#header{background: #fff;}
+
+#header .navbar-brand img{width:12vh}
+
+.navShadow{-webkit-box-shadow: 0 4px 6px -6px #222;
+  -moz-box-shadow: 0 4px 6px -6px #222;
+  box-shadow: 0 4px 6px -6px #222;}
+  
+/*Menu animate*/
+.navbar { 
+  -webkit-transition:padding 0.2s ease;
+  -moz-transition:padding 0.2s ease; 
+  -o-transition:padding 0.2s ease;        
+  transition:padding 0.2s ease;  
+}
+
+.affix {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+  -webkit-transition:padding 0.2s linear;
+  -moz-transition:padding 0.2s linear;  
+  -o-transition:padding 0.2s linear;         
+  transition:padding 0.2s linear;  
+ 
+}
+
+section {
+    min-height:calc(100% - 70px);
+}
+  
+
+
+
+
+/*Welcome*/
+#welcome {
+    width: 100%;
+    height: 65vh;
+    position: relative;
+	background-color: #343a40  /* #8080ff  #5c8a8a  #527a7a  #006666  #e6eeff  #e6e6ff
+	
+	
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(159,195,249,1) 71%, rgba(0,212,255,1) 100%);
+	
+	background: rgb(44,32,244);
+	background: linear-gradient(128deg, rgba(44,32,244,1) 11%, rgba(121,174,250,1) 71%, rgba(0,212,255,1) 100%);
+	*/
+
+}
+
+#welcome::after{ /*Aggiunge lo sfondo con opacity. Cosi la scritta (welcome-content) sta sopra lo sfondo ma non si opacizza*/
+  content: "";
+  background: url(img/imgheaderd.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  /*opacity: 0.3;*/
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  
+}
+
+
+#welcome .welcome-content {  /*centra il conenuto sopra lo sfondo*/
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+	
+}
+
+
+
+#welcome .welcome-content h2 {
+	font-family: 'ZCOOL QingKe HuangYou', cursive;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 60px;
+    font-weight: 700;
+	letter-spacing: 22px;
+}
+
+#welcome .welcome-content h3 {
+	  margin-bottom: 1.15rem;
+	  color:white;
+	  font-family: 'Roboto', sans-serif;
+}
+
+.welcomeLuisotti{
+	position: relative;
+    left: 20%;
+    font-size: 50px;
+    bottom: 8%;
+}
+
+@media only screen and (max-width: 600px){
+	#welcome .welcome-content h2 {
+		font-size: 2.20rem !important;
+		letter-spacing: 10px;
+		margin-bottom: 0.50rem;
+	}
+	
+	#welcome .welcome-content h3 {
+		font-size: 1.2rem !important;
+		margin-bottom: 0.80rem;
+	}
+	
+	.welcomeLuisotti{font-size: 1.7rem;}
+}
+
+#welcome .btn-success{
+	background-color:#ff3333;
+	border-color: #ff3333;
+}
+
+#welcome .btn-primary{
+	background-color:#4db8ff;
+	border-color: #4db8ff
+}
+
+
+
+
+
+/*Chi siamo*/
+
+#about {background-color: #f9f9f9;}
+
+
+section .heading-line {
+    margin: 0 auto;
+    display: block;
+    height: 1px;
+    width: 120px;
+    background: #333;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.about-img {
+	
+    height: 390px;
+    overflow: hidden;
+	
+}
+
+
+/*Portfolio*/
+
+#portfolio{background-color: #fff;}
+
+.tlp-portfolio .tlp-layout-1 .tlp-portfolio-thum img {width: 100% !important} /*Immagini grandi quanto il loro conteniitore. Altrimenti mette dei bordi*/
+
+.tlp-portfolio a{color: #4db8ff !important;}
+
+
+
+
+/*Contact*/
+
+#contatti{background-color: #fff;}
+
+.contact-i{
+	margin-bottom: 20px;
+    text-align: center;
+}
+
+@media (min-width: 768px){
+.contact-address, .contact-phone, .contact-email {
+    padding: 20px 0;
+}
+}
+
+.contact-address, .contact-phone, .contact-email {
+    margin-bottom: 20px;
+}
+
+.contact-i i {
+    font-size: 48px;
+    display: inline-block;
+    margin-bottom: 24px;
+    color: #4db8ff;
+}
+
+.contact-i h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #999;
+}
+
+.contact-i address, .contact-i p {
+    margin-bottom: 0;
+    color: #000;
+}
+
+@media (min-width: 768px){
+	.contact-phone {
+		border-left: 1px solid #ddd;
+		border-right: 1px solid #ddd;
+	}
+}
+
+.contact-i a {
+    color: #000;
+}
+
+/* Contact --> form */ 
+
+form label{width: 100%;}
+
+form input{
+	width: 50%;
+      height: 30px;
+      margin: 0 auto;
+      margin-top:10px;
+      border: none;
+      border:solid 1px #ccc;
+      border-radius: 10px;
+	
+}
+
+form textarea{
+	width: 100%;
+	margin: 0 auto;
+      margin-top:10px;
+      border: none;
+      border:solid 1px #ccc;
+      border-radius: 10px;
+	}
+	
+@media only screen and (max-width: 768px){
+	form input{width:100%}
+}
+
+form p{margin-bottom: 0rem !important}
+
+form .wpcf7-submit{width: 5.0rem; cursor: pointer;}
+
+div.wpcf7-response-output{border-radius: 10px !important;} /*bordo risposta al form*/
+div.wpcf7-mail-sent-ok{border: 2px solid #4db8ff !important;}
+
+/* footer */
+
+
+#sectionfooter{background-color: #343a40; /*#f9f9f9*/}
+
+.footer-distributed{
+	
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+
+	padding: 55px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 35%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font-family: 'ZCOOL QingKe HuangYou', cursive;
+	font-size: 36px;
+	margin: 0;
+}
+
+
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 40%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #4db8ff;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-center p #phoneFooter{color: #ffffff;}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
